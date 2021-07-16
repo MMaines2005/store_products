@@ -43,16 +43,16 @@ store = Store("Market")
 
 #load products
 
-store.load_new_products(fru1, 1, 5)
-store.load_new_products(fru2, 0)
-store.load_new_products(bread1, 2)
-store.load_new_products(bread2, 1)
+store.load_item(fru1, 1)
+store.load_item(fru2, 0)
+store.load_item(bread1, 2)
+store.load_item(bread2, 1)
 
 #checks/ prints/functions
 
 store.list_products(bread)
-print(store.sell_products(bread1))
+print(store.sell_item(bread1))
 print(store.total_income())
-store.load_new_products(fru2, 1)
+store.load_item(fru2, 1)
 store.list_products()
 print(store.total_income())
